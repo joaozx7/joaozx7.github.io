@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Faça seu cadastro!</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="titulos.html">Títulos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <aside class="container">
+            <h2><span>Cadastro</span> de Usuário</h2>
+            <form id="cadastroForm" class="formulario">
+                <label for="nomeCompleto">NOME COMPLETO:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" class="campo" required><br>
+
+                <label for="telefone">Nº DE TELEFONE:</label>
+                <input type="tel" id="telefone" name="telefone" class="campo" required><br>
+
+                <label for="email">E-MAIL:</label>
+                <input type="email" id="email" name="email" class="campo" required><br>
+
+                <label for="dataNascimento">DATA DE NASCIMENTO:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" class="campo" required><br>
+
+                <label for="nomeUsuario">NOME DE USUÁRIO:</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" class="campo" required><br>
+
+                <label for="senha">SENHA:</label>
+                <input type="password" id="senha" name="senha" class="campo" required><br>
+
+                <button type="button" id="cadastrarBtn" class="botao">CADASTRAR</button>
+                <button type="button" id="cancelarBtn" class="botao">CANCELAR</button>
+            </form>
+        </aside>
+    </main>
+    <div id="resultado" class="resultado"></div>
+</body>
+</html>
